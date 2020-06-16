@@ -1,7 +1,7 @@
 package ru.job4j.calculator;
 
 public class Multiple {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Alexey Biryukov");
         System.out.println("07.07.1993");
         System.out.println("1 * 2 = 2");
