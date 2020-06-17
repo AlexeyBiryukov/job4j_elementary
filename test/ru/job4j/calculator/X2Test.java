@@ -4,8 +4,8 @@ import static org.hamcrest.Matchers.is;
 
 import org.junit.Test;
 
-
 public class X2Test {
+
     @Test
     public void whenBCZero() {
         int a = 10;
@@ -29,7 +29,7 @@ public class X2Test {
 
         int expected = 3;
 
-        int rsl = X2.calc(a,b,c,x);
+        int rsl = X2.calc(a, b, c, x);
         assertThat(rsl, is(expected));
     }
 
