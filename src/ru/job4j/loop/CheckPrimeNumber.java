@@ -6,24 +6,15 @@ public class CheckPrimeNumber {
     }
 
     public static boolean check(int number) {
-        boolean prime = true;
-        int hold = 0;
+        boolean prime = number > 1;
 
-            for (int index = 1; index <= number; index++) {
-                hold += index;
-                System.out.println("---------------------- ");
-                System.out.println("hold: " + hold);
-                System.out.println("number: " + number);
-
-                if ((number % hold) == 0) {
-                    System.out.println("number % hold: " + (number % hold));
-                    prime = false;
-                } else {
-                    prime = true;
-                }
+        for (int index = 2; index < number; index++) {
+            if ((number % index) == 0) {
+                prime = false;
+                break;
             }
-                System.out.println("result: " + prime);
-                System.out.println("---------------------- ");
-            return prime;
+        }
+        System.out.println(prime);
+        return prime;
     }
 }
