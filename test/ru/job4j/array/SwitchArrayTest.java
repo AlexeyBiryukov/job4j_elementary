@@ -17,15 +17,15 @@ public class SwitchArrayTest {
     @Test
     public void swapTwo() {
         int[] input = {5, 3, 2, 0};
-        int[] expect = {0, 5, 3, 2};
+        int[] expect = {0, 3, 2, 5};
         int[] rsl = SwitchArray.swap(input, 0, input.length - 1);
         assertThat(rsl, is(expect));
     }
 
     @Test
     public void SwapThree() {
-        int[] input = {7, 6, 4, 2, 0};
-        int[] expect = {0, 7, 6, 4, 2};
+        int[] input = {7, 6, 4, 2};
+        int[] expect = {2, 6, 4, 7};
         int[] rsl = SwitchArray.swap(input, 0, input.length - 1);
         assertThat(rsl, is(expect));
     }
