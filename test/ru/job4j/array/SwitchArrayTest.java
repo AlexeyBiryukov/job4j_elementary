@@ -23,7 +23,7 @@ public class SwitchArrayTest {
     }
 
     @Test
-    public void SwapThree() {
+    public void swapThree() {
         int[] input = {7, 6, 4, 2};
         int[] expect = {2, 6, 4, 7};
         int[] rsl = SwitchArray.swap(input, 0, input.length - 1);

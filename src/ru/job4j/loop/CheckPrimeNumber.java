@@ -14,7 +14,6 @@ public class CheckPrimeNumber {
                 break;
             }
         }
-        System.out.println(prime);
         return prime;
     }
 }
