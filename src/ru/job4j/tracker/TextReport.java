@@ -6,8 +6,14 @@ public class TextReport {
     }
 
     public static void main(String[] args) {
-        JSONReport report = new JSONReport();
+        HtmlReport report = new HtmlReport();
         String text = report.generate("Alexander", "Macedonian");
         System.out.println(text);
+
+        System.out.println();
+
+        JSONReport report1 = new JSONReport();
+        String text1 = report1.generate("Alexander", "Macedonian");
+        System.out.println(text1);
     }
 }
