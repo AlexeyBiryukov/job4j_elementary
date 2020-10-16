@@ -1,4 +1,4 @@
-package ru.job4j.tracker;
+package ru.job4j.pojo;
 
 public class JSONReport extends TextReport {
     @Override
