@@ -14,13 +14,14 @@ public class Tracker {
     }
 
     public Item[] findAll() {
-        //  Item[] itemsWithoutNull = new Item[items.length];
-        //   for (int index = 0; index < items.length; index++) {
-        //       Item id = items[index];
-        //       if (id != null) {
-        //           itemsWithoutNull[size] = id;
-        //           size++;
-        //    }
+        /*  Item[] itemsWithoutNull = new Item[items.length];
+           for (int index = 0; index < items.length; index++) {
+               Item id = items[index];
+               if (id != null) {
+                   itemsWithoutNull[size] = id;
+                  size++;
+            }
+         */
         Item[] rsl = Arrays.copyOf(items, size);
         return rsl;
     }
@@ -38,7 +39,7 @@ public class Tracker {
         Item[] rsl = Arrays.copyOf(itemsWithName, size);
         return rsl;
     }
-    
+
     public Item findById(int id) {
         Item rsl = null;
         for (int index = 0; index < size; index++) {
