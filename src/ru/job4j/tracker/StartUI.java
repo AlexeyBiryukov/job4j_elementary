@@ -4,7 +4,9 @@ public class StartUI {
     public static void main(String[] args) {
         Tracker tracker = new Tracker();
         Item item1 = new Item();
+        item1.setName("Number #1");
         tracker.add(item1);
-        System.out.println(tracker.findById(0));
+
+        System.out.println(tracker.findById(1));
     }
 }
