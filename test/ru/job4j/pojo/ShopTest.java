@@ -1,5 +1,6 @@
 package ru.job4j.pojo;
 
+import Train.Product;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
