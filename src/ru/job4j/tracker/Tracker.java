@@ -26,13 +26,14 @@ public class Tracker {
         return rsl;
     }
 
+
     public Item[] findByName(String key) {
         Item[] itemsWithName = new Item[items.length];
         size = 0;
         for (int index = 0; index < items.length; index++) {
-          Item names = items[index];
-          if (names.equals(key)) {
-              itemsWithName[size] = names;
+          Item name = items[index];
+          if (name.equals(key)) {
+              itemsWithName[size] = name;
               size++;
           }
         }
