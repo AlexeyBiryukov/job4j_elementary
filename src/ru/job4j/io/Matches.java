@@ -15,7 +15,7 @@ public class Matches {
             turn = !turn;
             if (matches < 1 || matches > 3) {
                 System.out.println("введено неверное число");
-            } else if (matches > 1 || matches <= 3) {
+            } else if (matches >= 1 || matches <= 3) {
                 count = count - matches;
                 System.out.println("На столе осталось " + count + " спичек.");
             }
